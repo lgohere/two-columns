@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replacing Containers</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    p {
+      text-align: center;
+      line-height: 100%;
+    }
+
+    .row {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    #show-row {
+      display: none;
+    }
+
+    @media (min-width: 720px) {
+      #show-row {
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: center;
+      }
+
+      .half-width {
+        width: 45%;
+      }
+
+      #blackout-row {
+        display: none;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div id="blackout-row" class="row">
+        <div class="full-width">
+          <h1>One-column Row</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img
+            src="https://w0.peakpx.com/wallpaper/251/306/HD-wallpaper-aerial-view-monutains-nature-mountains-sky.jpg"
+            alt="img-1"
+          />
+          <h2>Subtitle 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img
+            src="https://w0.peakpx.com/wallpaper/450/211/HD-wallpaper-bavaria-sunset-hut-mountains-hills-germany-europe.jpg"
+            alt="img-2"
+          />
+          <h1>One-column Row</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img
+            src="https://w0.peakpx.com/wallpaper/918/873/HD-wallpaper-bavaria-autumn-road-mountains-germany-europe-beautiful-nature-hut-in-mountains.jpg"
+            alt="img-3"
+          />
+          <h2>Subtitle 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img
+            src="https://w0.peakpx.com/wallpaper/918/873/HD-wallpaper-bavaria-autumn-road-mountains-germany-europe-beautiful-nature-hut-in-mountains.jpg"
+            alt="img-3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="show-row" class="row">
+        <div class="half-width">
+          <h1>Two-columns Row</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img src="./img1.jpg" alt="img-1" />
+          <h2>Subtitle 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img src="/img2.jpg" alt="img-2" />
+        </div>
+        <div class="half-width">
+          <h1>Two Columns Row</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img src="/img3.jpg" alt="img-2" />
+          <h2>Subtitle 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            omnis illum quibusdam tempore. Asperiores aperiam culpa officiis
+            dolorum impedit, numquam, error magnam temporibus placeat tempore
+            similique in quis excepturi! Ab.
+          </p>
+          <img src="img4.jpg" alt="img-3" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
